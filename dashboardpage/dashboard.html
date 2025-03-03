@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTW Dashboard</title>
+    <link rel="stylesheet" href="/dashboardpage/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <!-- <img src="/api/placeholder/40/40" alt="Logo" class="logo"> -->
+                <h2>PTW Dashboard</h2>
+            </div>
+            
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="active">
+                        <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="/permitpage/permit.html"><i class="fas fa-file-signature"></i> Permits</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-search"></i> Observations</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-exclamation-triangle"></i> Incidents</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chart-bar"></i> Reports</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-users"></i> Teams</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    </li>
+                    <li class="active">
+                        <a href="/index.html"><i class="fas fa-cog"></i> Back To Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="/img/john.jpg" alt="User" class="user-img">
+                    <div class="user-details">
+                        <h4>John Doe</h4>
+                        <p>Safety Manager</p>
+                    </div>
+                </div>
+                <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search permits, incidents...">
+                </div>
+                <div class="top-bar-actions">
+                    <a href="#" class="notification-icon"><i class="fas fa-bell"></i><span class="badge">3</span></a>
+                    <a href="#" class="create-btn"><i class="fas fa-plus"></i> New Permit</a>
+                </div>
+            </div>
+
+            <div class="dashboard-header">
+                <h1>Dashboard</h1>
+                <div class="date-filter">
+                    <i class="fas fa-calendar"></i>
+                    <span>March 1 - March 31, 2025</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon pending">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>18</h3>
+                        <p>Pending Permits</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon active">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>42</h3>
+                        <p>Active Permits</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon closed">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>7</h3>
+                        <p>Closed Permits</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon incidents">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>3</h3>
+                        <p>Open Incidents</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="grid-item activity-feed">
+                    <div class="card-header">
+                        <h2>Recent Activity</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon permit-created">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Hot Work Permit #HW-2305 Created</h4>
+                                <p>Created by Mark Johnson for Site B</p>
+                                <span class="activity-time">Today, 10:25 AM</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon permit-approved">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Confined Space Permit #CS-1892 Approved</h4>
+                                <p>Approved by Sarah Williams</p>
+                                <span class="activity-time">Today, 09:15 AM</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon incident-reported">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Near Miss Incident Reported</h4>
+                                <p>Reported by Robert Davis at Site A</p>
+                                <span class="activity-time">Yesterday, 03:45 PM</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon observation">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Safety Observation Filed</h4>
+                                <p>Filed by Jennifer Brown for Site C</p>
+                                <span class="activity-time">Yesterday, 02:10 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item upcoming-permits">
+                    <div class="card-header">
+                        <h2>Upcoming Expirations</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="permits-list">
+                        <div class="permit-item">
+                            <div class="permit-details">
+                                <h4>Hot Work Permit #HW-2298</h4>
+                                <p>Site A - Building 3</p>
+                            </div>
+                            <div class="permit-expiry warning">
+                                <span>Expires in 2 days</span>
+                            </div>
+                        </div>
+                        <div class="permit-item">
+                            <div class="permit-details">
+                                <h4>Electrical Permit #EL-1654</h4>
+                                <p>Site B - Main Facility</p>
+                            </div>
+                            <div class="permit-expiry warning">
+                                <span>Expires in 3 days</span>
+                            </div>
+                        </div>
+                        <div class="permit-item">
+                            <div class="permit-details">
+                                <h4>Confined Space #CS-1887</h4>
+                                <p>Site A - Tank Area</p>
+                            </div>
+                            <div class="permit-expiry normal">
+                                <span>Expires in 5 days</span>
+                            </div>
+                        </div>
+                        <div class="permit-item">
+                            <div class="permit-details">
+                                <h4>Height Work #HW-2105</h4>
+                                <p>Site C - Tower 2</p>
+                            </div>
+                            <div class="permit-expiry normal">
+                                <span>Expires in 7 days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="/dashboardpage/dashboard.js"></script>
+</body>
+</html>

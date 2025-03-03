@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTW Permits Dashboard</title>
+    <link rel="stylesheet" href="/permitpage/permit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <!-- <img src="/api/placeholder/40/40" alt="Logo" class="logo"> -->
+                <h2>PTW Permits</h2>
+            </div>
+            
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="active">
+                        <a href="/dashboardpage/dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="fas fa-file-signature"></i> Permits</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-search"></i> Observations</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-exclamation-triangle"></i> Incidents</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chart-bar"></i> Reports</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-users"></i> Teams</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    </li>
+                    <li class="active">
+                        <a href="/index.html"><i class="fas fa-cog"></i> Back To Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="/img/john.jpg" alt="User" class="user-img">
+                    <div class="user-details">
+                        <h4>John Doe</h4>
+                        <p>Safety Manager</p>
+                    </div>
+                </div>
+                <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search permits...">
+                </div>
+                <div class="top-bar-actions">
+                    <a href="#" class="notification-icon"><i class="fas fa-bell"></i><span class="badge">3</span></a>
+                    <a href="#" class="create-btn"><i class="fas fa-plus"></i> New Permit</a>
+                </div>
+            </div>
+
+            <div class="permit-header">
+                <h1>Choose permit type to continue</h1>
+            </div>
+
+            <div class="permit-selection-container">
+                <div class="permit-grid">
+
+                    <div class="permit-card" data-permit-type="gp">
+                        <div class="permit-icon general">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="permit-details">
+                            <h3>NRJP (light)</h3>
+                            <p>NON-ROUTINE JOBS PERMIT</p>
+                        </div>
+                    </div>
+
+                    <a href="/formpage/hwpform.html">
+                    <div class="permit-card" data-permit-type="hwp">
+                        <div class="permit-icon hot">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="permit-details">
+                            <h3>HWP</h3>
+                            <p>HOT WORK PERMIT</p>
+                        </div>
+                    </div>
+                    </a>
+
+                    <div class="permit-card" data-permit-type="electrical">
+                        <div class="permit-icon electrical">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="permit-details">
+                            <h3>EWP</h3>
+                            <p>Electrical Work Permit</p>
+                        </div>
+                    </div>
+
+                    <div class="permit-card" data-permit-type="swms">
+                        <div class="permit-icon safety">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="permit-details">
+                            <h3>HVAC</h3>
+                            <p>MAINTENANCE JOBS PERMIT</p>
+                        </div>
+                    </div>
+
+                    <div class="permit-card" data-permit-type="lp2">
+                        <div class="permit-icon lifting">
+                            <i class="fas fa-weight-hanging"></i>
+                        </div>
+                        <div class="permit-details">
+                            <h3>NRHL</h3>
+                            <p>NON-ROUTINE HEAVY LIFTING PERMIT</p>
+                        </div>
+                    </div>
+
+                    <div class="permit-card" data-permit-type="hpt">
+                        <div class="permit-icon pressure">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="permit-details">
+                            <h3>EGPP</h3>
+                            <p>EXCAVATION/GROUND PENETRATION PERMIT</p>
+                        </div>
+                    </div>
+
+                    <div class="permit-card" data-permit-type="whp-2">
+                        <div class="permit-icon height">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="permit-details">
+                            <h3>WHP</h3>
+                            <p>Work Height Permit</p>
+                        </div>
+                    </div>
+
+                    <div class="permit-card" data-permit-type="cwp">
+                        <div class="permit-icon cold">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <div class="permit-details">
+                            <h3>WFRP</h3>
+                            <p>WORK ON FRAGILE ROOF PERMIT</p>
+                        </div>
+                    </div>
+
+                    <div class="permit-card" data-permit-type="twp">
+                        <div class="permit-icon general">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="permit-details">
+                            <h3>DPW</h3>
+                            <p>DIVING PERMIT TO WORK</p>
+                        </div>
+                    </div>
+
+                    <div class="permit-card" data-permit-type="ptw-ov">
+                        <div class="permit-icon general">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="permit-details">
+                            <h3>CSP</h3>
+                            <p>CONFINED SPACE</p>
+                        </div>
+                    </div>
+
+                    <div class="permit-card" data-permit-type="chp">
+                        <div class="permit-icon chemical">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="permit-details">
+                            <h3>CPAP</h3>
+                            <p>CHEMICAL PRONE AREA PERMIT</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/permitpage/permit.js"></script>
+</body>
+</html>
