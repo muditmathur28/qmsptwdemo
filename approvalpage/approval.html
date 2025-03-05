@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permt Approval Hierarchy</title>
+    <link rel="stylesheet" href="/approvalpage/approval.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Permit Approval Status</h1>
+        
+        <div class="approval-hierarchy">
+            <div class="approval-step" id="permitOwner">
+                <h2>Permit Owner</h2>
+                <p>Status: Submitted</p>
+                <span class="status-icon complete">✓</span>
+            </div>
+            
+            <div class="approval-step" id="areaIncharge">
+                <h2>Area In-charge</h2>
+                <p>Status: Pending</p>
+                <span class="status-icon incomplete">✗</span>
+            </div>
+            
+            <div class="approval-step" id="approverHOD">
+                <h2>Approver HOD</h2>
+                <p>Status: Pending</p>
+                <span class="status-icon incomplete">✗</span>
+            </div>
+            
+            <div class="approval-step" id="hseCoordinator">
+                <h2>HSE Coordinator</h2>
+                <p>Status: Pending</p>
+                <span class="status-icon incomplete">✗</span>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <a href="/dashboardpage/dashboard.html"><button id="backToDashboard">Back to Dashboard</button></a>
+        </div>
+    </div>
+
+    <script src="/approvalpage/approval.js"></script>
+</body>
+</html>

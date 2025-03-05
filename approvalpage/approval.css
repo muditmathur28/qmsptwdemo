@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.approval-hierarchy {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.approval-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.approval-step h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.approval-step p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.status-icon {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.status-icon.complete {
+    color: green;
+}
+
+.status-icon.incomplete {
+    color: red;
+}
+
+.actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#backToDashboard {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#backToDashboard:hover {
+    background-color: #0056b3;
+}
